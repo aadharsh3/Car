@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Toggle Menu with Full-Width Image and Centered Content</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .full-width-image {
+      width: 100%;
+      height: 100vh; 
+      object-fit: cover; 
+      position: relative;
+    }
+
+    .centered-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; 
+      text-align: center;
+    }
+
+    .centered-content h1 {
+      font-size: 4rem; 
+      color: rgb(0, 0, 0); 
+    }
+
+    .centered-content p {
+      font-size: 1.5rem; 
+      color: #ffcccb; 
+    }
+
+    .custom-button {
+      background-color: #007bff;
+      border: none;
+      padding: 15px 30px; 
+      font-size: 1.2rem;
+      color: white;
+      border-radius: 10px; 
+    }
+
+    .custom-button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 575.98px) {
+      .centered-content h1 {
+        font-size: 2rem; 
+      }
+      .centered-content p {
+        font-size: 1rem; 
+      }
+      .custom-button {
+        padding: 10px 20px; 
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .centered-content h1 {
+        font-size: 2.5rem; 
+      }
+      .centered-content p {
+        font-size: 1.2rem; 
+      }
+      .custom-button {
+        padding: 12px 25px; 
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .centered-content h1 {
+        font-size: 3rem; 
+      }
+      .centered-content p {
+        font-size: 1.3rem;
+      }
+      .custom-button {
+        padding: 13px 28px; 
+        font-size: 1.15rem;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .centered-content h1 {
+        font-size: 3.5rem; 
+      }
+      .centered-content p {
+        font-size: 1.4rem; 
+      }
+      .custom-button {
+        padding: 14px 30px;
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .centered-content h1 {
+        font-size: 4rem; 
+      }
+      .centered-content p {
+        font-size: 1.5rem; 
+      }
+      .custom-button {
+        padding: 15px 30px; 
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> AADHARSH KIA</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#cars">CARS</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">SERVICES BOOK</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0 position-relative">
+    <img src="KIA.jpg" alt="Caring for you" class="full-width-image">
+    <div class="centered-content">
+      <h1>Amazing Cars</h1>
+      <p>CAR SALES & SERVICES</p>
+      <a href="#" class="custom-button">Learn More</a>
+    </div>
+  </div>
+
+  <section id="cars" class="py-5"> 
+    <div class="container">
+      <div class="row text-center">
+        <h2>Our Cars</h2>
+        <p class="lead">We have new models</p>
+      </div>
+     
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="kia-sonet.jpg" class="card-img-top" alt="Kia Sonet">
+            <div class="card-body">
+              <h5 class="card-title">Kia Sonet</h5>
+              <p class="card-text">The Kia Sonet is a 5-seater SUV with a variety of features, including safety systems and more.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Carens_1920x1080_3.jpg" class="card-img-top" alt="Kia Carens">
+            <div class="card-body">
+              <h5 class="card-title">Kia Carens</h5>
+              <p class="card-text">The Carens has numerous safety features, including six airbags, ABS, and more.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4"> 
+          <div class="card">
+            <img src="seltos.jpg" class="card-img-top" alt="Kia Seltos">
+            <div class="card-body">
+              <h5 class="card-title">Kia Seltos</h5>
+              <p class="card-text">The Seltos has numerous safety features, including six airbags, ABS, and more.</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </section>
+  <section id="Services" class="py-5">
+  </section>
+  <section id="services" class="py-5 bg-light">
+    <div class="row text-center">
+        <h2>Book an services</h2>
+        <p class="lead">Fill the form</p>
+    </div>
+    <form id="services form" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <div class="invalid-feedbackform">please enter your name.</div>
+        </div>
+    </form>
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Email</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your email" required>
+        <div class="invalid-feedbackform">please enter a valid email.</div>
+    </div>
+
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Date</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter the date" required>
+        <div class="invalid-feedbackform">please select the date.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">submit</button>
+  </section>
+  
+<footer class="bg-info text-white text-center py-3">
+    <p>@2024 aadharsh kia.All Rights Reserved</p>
+</footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
